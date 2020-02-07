@@ -1,0 +1,6 @@
+{
+    "name": "Mada",
+    "age": 123,
+    "parents": [{ "mom": "Anna", "dad": "Alex"}]
+
+}
