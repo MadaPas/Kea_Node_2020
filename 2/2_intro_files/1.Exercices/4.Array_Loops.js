@@ -128,5 +128,4 @@ console.log(discardedNumbers);
 // log the element if the number is above 6 or below 0
 // else push them to the array discardedNumbers
 
-// --------------------------------------
-
+// -----------------------------------
