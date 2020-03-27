@@ -7,6 +7,8 @@
 
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="/global.css">
+    <link rel="stylesheet" type="text/css" href="/navbar.css">
+
 
     <!-- jquerty -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -16,13 +18,16 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!-- Image and text -->
-    <body>
-        <nav class="navbar navbar-light bg-light">
-            <h1>*navbar*</h1>
-            <a  class="navbar-brand" href="/">
-                <img class="navbar-icon" src="/navbar/KeaTube.png" alt="KEATube"">
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <h1>*navbar*</h1>
+        <a class="navbar-brand" href="/">
+            <img class="navbar-icon" src="/navbar/KeaTube.png" alt="KEATube"">
                 Keatube
             </a>
-            <!-- <a id="upload-link" href="../upload/upload.html">Upload</a> -->
-        </nav>
-        <div id="main-content">
+            <a href="/upload" type="submit">
+            <button type="button" class="btn btn-outline-success">Upload</button>
+        </a>
+    </nav>
+    <div id="main-content">

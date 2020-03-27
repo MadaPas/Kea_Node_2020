@@ -23,6 +23,9 @@ const footer = fs.readFileSync("public/footer/footer.html", "utf8");
 const frontPage = fs.readFileSync("public/frontpage/frontpage.html", "utf8");
 const playerPage = fs.readFileSync("public/player/player.html", "utf8");
 
+const uploadPage = fs.readFileSync("public/upload/upload.html", "utf8")
+
+
 app.get("/", (req, res) => {
    return res.send(navbar + frontPage + footer);
 });
@@ -35,6 +38,14 @@ app.get("/player/:videoId", (req, res) => {
 // app.get("/player/:videoId", (req, res) => {
 //     return res.sendFile(__dirname + "/public/player/player.html");
 // });
+
+
+
+
+app.get("/upload", (req, res) => {
+    return res.send(navbar + uploadPage + footer)
+})
+
 
 // import routes
 const videosRoute = require("./routes/videos")
