@@ -24,11 +24,7 @@ const storage = multer.diskStorage({
     }
 });
 
-
-
 const upload = multer({ dest: 'videos/', storage: storage })
-
-
 
 
 const videos = [{
