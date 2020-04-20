@@ -1,18 +1,22 @@
 <script src="/upload/upload.js"></script>
+<script src="sweetalert2.all.min.js"></script>
 
-<h1>Upload page</h1>
-<!-- action = the endpoint -->
-<form action="/videos" method="POST" enctype="multipart/form-data" >
+<h3>Upload</h3>
 
-<!-- onsubmit="return validateForm()"> -->
-    
-<!-- <input name="title" placeholder="title"/> -->
+<form action="/videos" method="POST" name="videoupload" enctype="multipart/form-data" onsubmit="return validateForm()">
+    <input placeholder="title" name="title" />
+    <textarea placeholder="description" name="description" rows="10" cols="30"></textarea>
+    <input type="file" name="uploadedVideo" accept="video/*" onchange="handleFileUpload(this.files)" />
 
-    <!-- <textarea name="description" placeholder="description" rows="5"></textarea> -->
+    <select name="category">
+        <option value="nature">Nature</option>
+        <option value="sport">Sport</option>
+        <option value="education">Education</option>
+        <option value="comedy">Comedy</option>
+        <option value="kids">Kids</option>
+        <option value="travelling">Travelling</option>
+    </select>
 
-    <input type="file" name="uploadedVideo" accept="video/*" />
-
-    <button type="submit">Submit</button> 
+    <input name="tags" placeholder="tags" />
+    <button type="submit">Submit</button>
 </form>
-
-

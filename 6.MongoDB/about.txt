@@ -1,0 +1,38 @@
+Relational databases
+--------------------
+MySQL
+MariaDB
+Oracle
+Postgres
+CouchDB
+msSQL
+
+NoSql
+-----
+MongoDB - Document Database
+FireBase
+AWS RDS
+DynamoDB
+CassandraDB
+Neo4J
+Realm
+
+MongoDB
+collection
+[
+    { "key": "value" },
+    { "anotherKey": 213 },
+    {}
+]
+
+When to use MongoDB
+
+- Rapid prototyping
+    - Which leads to: used by many start-ups
+
+
+When not to use MongoDB
+
+- When you data schema is very rigid
+
+- When your data is very relational in a rigid way
