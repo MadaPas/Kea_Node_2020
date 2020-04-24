@@ -108,40 +108,4 @@ router.post("/videos", upload.single("uploadedVideo"), (req, res) => {
     return res.redirect("/");
 });
 
-// router.post("/videos", upload.single('uploadedVideo'), (req, res) => {
-//     /*     console.log(req.body);
-//         console.log(req.file); */
-
-//         let errors = [];
-
-//         const video = {
-//             fileName: req.file.filename,
-//             title: req.body.title,
-//             description: req.body.description,
-//             thumbnail:"", 
-//             category: "", 
-//             tags: "",
-//             uploadDate: new Date()
-//         };
-
-//         const titleMinLength = 8;
-//         const titleMaxLength = 128;
-
-//         if (title.length < titleMinLength || title.length > titleMaxLength) {
-//             errors.push("This title is not allowed.");
-//         }
-
-//         const descriptionMaxLength = 2048;
-//         if (video.description.length > descriptionMaxLength) {
-//             errors.push("This description is not allowed.");
-//         }
-
-//         if (errors.length > 0) {
-//             return res.send({ response: errors });
-//         } else {
-//             videos.push(video);
-//         } 
-
-//     });
-
 module.exports = router;
