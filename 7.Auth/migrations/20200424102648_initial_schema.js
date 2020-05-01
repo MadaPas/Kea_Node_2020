@@ -8,7 +8,7 @@ exports.up = function(knex) {
             table.dateTime('updated_at').defaultTo(knex.raw('NULL ON UPDATE CURRENT_TIMESTAMP'));
             table.timestamp('created_at').defaultTo(knex.fn.now());
         })
-        .createTable('users_electives', table => {
+        .createTable('electives', table => {
             table.increments('id');
 
             table.string('course_name').notNullable();
@@ -25,6 +25,6 @@ exports.up = function(knex) {
 exports.down = function(knex) {
   // rollback
   return knex.schema
-  .dropTableIfExists('users_electives')
+  .dropTableIfExists('electives')
   .dropTableIfExists('users');
 };

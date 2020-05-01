@@ -1,5 +1,5 @@
 exports.seed = function(knex) {
-  return knex('users_electives').del()
+  return knex('electives').del()
     .then(() => {
       return knex('users').del();
     });

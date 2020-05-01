@@ -5,7 +5,7 @@ exports.seed = function(knex) {
         console.log(users);
         if (users.length >= 2) {
 
-      return knex('users_electives').insert([
+      return knex('electives').insert([
         {course_name: 'Python', user_id: users[0].id},
         {course_name: 'Android', user_id: users[0].id},
         {course_name: 'IOS', user_id: users[0].id},
